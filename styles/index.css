@@ -2,12 +2,15 @@ body {
   margin: 0;
   padding: 0;
   background: #0f0f0f;
+  font-family: Arial, Helvetica, sans-serif;
+  font: roboto;
 }
 .Main-container {
   margin: 0;
   padding: 0;
   background: #0f0f0f;
-  width: 50vh;
+  width: auto;
+  height: auto;
 }
 /** Navbar Begin*/
 
@@ -147,7 +150,6 @@ body {
   padding-top: 54px;
   margin-left: 54px;
   display: flex;
-  justify-content: space-between;
 }
 .Video {
   padding: 24px 24px 0 0;
@@ -156,11 +158,17 @@ body {
 }
 .Video-right {
   padding: 24px 24px 0 0;
+  float: left;
+}
+.Video-left {
+  padding: 0px;
+  margin: 0px;
 }
 
 .Video video {
-  max-width: 930px;
-  min-width: 400px auto;
+  padding: 0px;
+  margin: 0px;
+  width: 930px;
   height: 523px;
   left: 0px;
   top: 0px;
@@ -171,6 +179,7 @@ body {
   display: flex;
   width: 402px;
   height: 98px;
+  padding-bottom: 5px;
 }
 .video-item img {
   min-width: 168px;
@@ -198,4 +207,190 @@ video {
   -webkit-box-shadow: 0px 0px 50px 30px #33301f;
   -moz-box-shadow: 0px 0px 50px 30px #33301f;
   box-shadow: 0px 0px 50px 30px #33301f;
+}
+.Video-title h1 {
+  font-weight: 600;
+  color: #f5f4f2;
+  font-size: 20px;
+}
+.Creator-img img {
+  border-radius: 50px;
+  height: 40px;
+}
+.Video-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54.4px;
+}
+.Creator-img {
+  display: flex;
+  align-items: center;
+  color: #f5f4f2;
+}
+.Creator-name-sub {
+  padding-left: 5px;
+  margin: 0;
+}
+.Creator-name-sub span {
+  color: gray;
+}
+.Creator-name-sub p {
+  margin: 0 0 2px 0;
+  font-weight: 700;
+}
+.Creator-subscription-button {
+  color: #f5f4f2;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: hsl(0, 0%, 18.82%);
+  border-radius: 25px;
+  height: 36px;
+}
+.Creator-subscription-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 600;
+  width: 150px;
+}
+.Creator-subscription-button img {
+  width: 24px;
+}
+.Creator-like-button {
+  color: #f5f4f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10px;
+  background-color: hsl(0, 0%, 18.82%);
+  border-radius: 25px;
+  height: 36px;
+  width: 125px;
+}
+.Creator-like-button label {
+  color: #f5f4f2;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.Like-btn {
+  padding-right: 4px;
+}
+.Creator-like-button img {
+  width: 24px;
+}
+.Creator-like-button .Wrapper {
+  height: 18px;
+  margin: 0;
+  border: 1px solid;
+  border-color: gray;
+}
+.Creator-share-button {
+  color: #f5f4f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: hsl(0, 0%, 18.82%);
+  border-radius: 25px;
+  height: 36px;
+}
+.Creator-share-button label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 600;
+}
+.Creator-share-button img {
+  height: 24px;
+  margin-right: 10px;
+}
+.Creator-download-button {
+  color: #f5f4f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: hsl(0, 0%, 18.82%);
+  border-radius: 25px;
+  height: 36px;
+  font-weight: 600;
+  padding: 0 10px 0 10px;
+}
+.Creator-download-button img {
+  margin-right: 10px;
+}
+.Creator-download-button label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.Creator-more-button {
+  color: #f5f4f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: hsl(0, 0%, 18.82%);
+  border-radius: 25px;
+  height: 36px;
+  font-weight: 600;
+  padding: 0 10px 0 10px;
+}
+.Creator-more-button img {
+  height: 24px;
+}
+.Creator-more-button label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Video-actions-right {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.Video-actions-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Video-description {
+  color: #f5f4f2;
+  margin-left: 10px;
+  background-color: hsl(0, 0%, 18.82%);
+  border-radius: 25px;
+  margin: 12px 12px 0 0;
+}
+.Video-description-content {
+  padding: 10px;
+  line-height: 1.4;
+}
+.insta-img {
+  height: 24px;
+}
+.insta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.insta-link a {
+  background-color: rgba(255, 255, 255, 0.102);
+  border-radius: 8px;
+  padding-bottom: 1px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f4f2;
+}
+.dot {
+  height: 8px;
+}
+a {
+  text-decoration: none;
 }
